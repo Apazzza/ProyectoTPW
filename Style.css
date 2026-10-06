@@ -13,18 +13,42 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%;
+    padding: 15px 5%;
+    background-color: #2e7d32; /*Color aproximado al verde del logo*/
+    color: white;
 }
 .Logo img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover; /*evita que estire la img*/
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
+
+.Logo img:hover{
+    transform: scale(1.1);
+}
+
 .Header nav ul{
     display: flex;
     list-style: none;
     gap: 20px;  
+    margin: 0;
+    padding: 0;
+}
+
+.Header nav ul li a{ /* Estilos para la lista y cada boton de esta */
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3 ease;
+}
+
+/*Hover para cada boton de la lista*/
+.Header nav ul li a:hover{ 
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .Header a{
