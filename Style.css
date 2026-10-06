@@ -11,17 +11,16 @@ body{
 /* Estilos para el header*/
 .Header{
     display: flex;
-    width: 100%;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 15px 5%;
-    background-color: #2e7d32; /*Color aproximado al verde del logo*/
+    background-color: #15412a; /*Color aproximado al verde del logo*/
     color: white;
 }
 .Logo img{
-    width: 150px;
+    width: 120px;
     height: auto;
-    border-radius: 0;
+    border-radius: 5px;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
@@ -32,8 +31,10 @@ body{
 
 .Header nav ul{
     display: flex;
+    width: 100%;
+    flex-direction: row;
     list-style: none;
-    gap: 20px;  
+    gap: 10px;  
     margin: 0;
     padding: 0;
 }
@@ -67,10 +68,11 @@ main{
 }
 
 .Memsaje {
+    font-size: 1rem;
     max-width: 800px;       
     text-align: center;     
     background-color: #ffffff; 
-    padding: 40px;           
+    padding: 20px;           
     border-radius: 10px;     
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);  
 }
@@ -78,14 +80,14 @@ main{
 /* El título principal (H1) */
 .Memsaje h1 {
     color: #1a1a1a;          
-    font-size: 2.5rem;       
+    font-size: 1.8rem;       
     margin-bottom: 20px;     
 }
 
 /* El párrafo */
 .Memsaje p {
-    font-size: 1.15rem;      
-    line-height: 1.8;        
+    font-size: 1rem;      
+    line-height: 1.5;        
     color: #555555;          
     margin: 0;
 }
@@ -104,7 +106,8 @@ footer{
     margin-top: 15px;
     font-display: flex;
     justify-content: center;
-    gap: 20px; /*deja un espacion entre los iconos*/
+    gap: 10px; /*deja un espacion entre los iconos*/
+    flex-direction: column;
 }
 .Redes img{
     width: 40px;
