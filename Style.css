@@ -11,6 +11,7 @@ body{
 /* Estilos para el header*/
 .Header{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
@@ -18,9 +19,9 @@ body{
     color: white;
 }
 .Logo img{
-    width: 120px;
+    width: 150px;
     height: auto;
-    border-radius: 5px;
+    border-radius: 0;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
