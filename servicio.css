@@ -1,4 +1,10 @@
 .img{
-  width: 10px;
-  height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    background-color: #15412a; /*Color aproximado al verde del logo*/
+    color: white;
+  
+  
 }
