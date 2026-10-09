@@ -1,23 +1,53 @@
-.body{
-    margin:0;
+/* Quita los márgenes blancos que pone el navegador por defecto */
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-.superior{
+/* Barra superior verde */
+.superior {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Pone el logo a la izquierda y el botón a la derecha */
     padding: 15px 5%;
-    background-color: #15412a; /*Color aproximado al verde del logo*/
-    color: white;
+    background-color: #0d3823; /* Verde oscuro del diseño */
+    width: 100%;
 }
 
-
+/* Tamaño de la imagen del logo */
 .logo-img {
-    width: 140px;
+    width: 130px;
     height: auto;
     display: block;
+}
 
+/* Estilo para el enlace "Volver al inicio" */
+.boton-inicio {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.boton-inicio:hover {
+    color: #a3d9b1; /* Color verde claro al pasar el mouse */
+}
+
+/* Estilos para el contenido de abajo (imágenes y títulos) */
+.contenido {
+    padding: 30px 5%;
+}
+
+.contenido h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.imagen-servicio {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
