@@ -13,14 +13,11 @@
     background-color: #15412a; /*Color aproximado al verde del logo*/
     color: white;
 }
-.LogoRecortado img{
-    width: 120px;
-    height: auto;
-    border-radius: 5px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
+
+
 .logo-img {
     width: 140px;
     height: auto;
     display: block;
+
+}
