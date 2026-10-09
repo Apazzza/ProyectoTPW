@@ -20,3 +20,7 @@
     object-fit: contain;
     transition: transform 0.3s ease;
 }
+.logo-img {
+    width: 140px;
+    height: auto;
+    display: block;
