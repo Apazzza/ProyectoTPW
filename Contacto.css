@@ -1,0 +1,205 @@
+
+/* DISEÑO GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+}
+
+/* ENCABEZADO Y MENÚ */
+header {
+    background-color: #17212e;
+    padding: 18px 6%;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 110px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e63946;
+}
+
+/* SECCIÓN DE CONTACTO */
+.contacto {
+    max-width: 1150px;
+    margin: auto;
+    padding: 65px 20px;
+}
+
+.contacto h1 {
+    font-size: 38px;
+    text-align: center;
+    color: #17212e;
+    margin-bottom: 15px;
+}
+
+.contacto > p {
+    text-align: center;
+    margin-bottom: 45px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* INFORMACIÓN DE LA EMPRESA */
+.informacion {
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.informacion h2 {
+    color: #17212e;
+    margin-bottom: 25px;
+}
+
+.informacion p {
+    margin-bottom: 22px;
+    font-size: 16px;
+}
+
+.informacion h3 {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+/* REDES SOCIALES */
+.redes {
+    display: flex;
+    gap: 18px;
+}
+
+.redes img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.redes img:hover {
+    transform: scale(1.15);
+}
+
+/* FORMULARIO */
+form {
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    color: #17212e;
+    margin-bottom: 25px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #e63946;
+    border-color: transparent;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* BOTÓN ENVIAR */
+button {
+    background-color: #e63946;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #bc2532;
+    transform: translateY(-2px);
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #17212e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* DISEÑO PARA CELULARES */
+@media (max-width: 768px) {
+    .encabezado {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto h1 {
+        font-size: 30px;
+    }
+
+    .informacion, form {
+        padding: 25px;
+    }
+}
