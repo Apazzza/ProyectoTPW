@@ -1,4 +1,4 @@
-/* Quita los márgenes blancos que pone el navegador por defecto */
+/* Quita márgenes por defecto */
 * {
     margin: 0;
     padding: 0;
@@ -10,57 +10,75 @@
 .superior {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Pone el logo a la izquierda y el botón a la derecha */
+    justify-content: space-between;
     padding: 15px 5%;
-    background-color: #0d3823; /* Verde oscuro del diseño */
+    background-color: #0d3823;
     width: 100%;
 }
 
-/* Tamaño de la imagen del logo */
 .logo-img {
     width: 130px;
     height: auto;
     display: block;
 }
 
-/* Estilo para el enlace "Volver al inicio" */
-.boton-inicio {
-    color: white;
+.volver-inicio {
+    color: #ffffff !important;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
-    transition: color 0.3s ease;
 }
 
-.boton-inicio:hover {
-    color: #a3d9b1; /* Color verde claro al pasar el mouse */
+.volver-inicio:hover {
+    color: #a3d9b1 !important;
 }
 
-/* Estilos para el contenido de abajo (imágenes y títulos) */
+/* Estilos de la sección principal */
 .contenido {
-    padding: 30px 5%;
+    padding: 40px 5%;
 }
 
 .contenido h1 {
-    margin-bottom: 20px;
-    color: #333;
+    margin-bottom: 30px;
+    color: #0d3823;
+    text-align: center;
 }
 
-.imagen-servicio {
-    max-width: 100%;
-    height: auto;
+/* Columna única contenedora de los elementos */
+.lista-servicios {
+    display: flex;
+    flex-direction: column; /* Coloca cada servicio uno debajo del otro en columna */
+    gap: 30px; /* Espacio entre cada servicio */
+}
+
+/* Fila individual: Pone la imagen a la izquierda y el texto a la derecha */
+.item-servicio {
+    display: flex;
+    align-items: center; /* Centra verticalmente el texto respecto a la imagen */
+    gap: 30px; /* Separación entre la imagen y la descripción */
+    background-color: #f9f9f9;
+    padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-.volver inicio{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
+/* Tamaño fijo o controlado para la imagen */
+.img-servicio {
+    width: 250px; /* Ancho fijo para mantener uniformidad */
+    height: 160px; /* Alto fijo */
+    object-fit: cover; /* Evita que la imagen se deforme */
+    border-radius: 6px;
 }
 
-.repostero{
-    max-width: 100%;
-    
-    
+/* Estilos para el bloque de texto de la derecha */
+.texto-servicio h2 {
+    color: #0d3823;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.texto-servicio p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
 }
