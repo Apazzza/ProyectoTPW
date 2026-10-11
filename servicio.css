@@ -62,6 +62,11 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
+.img-servicio:hover{
+    transform: scale(1.1);
+    
+}
+
 /* Tamaño fijo o controlado para la imagen */
 .img-servicio {
     width: 250px; /* Ancho fijo para mantener uniformidad */
