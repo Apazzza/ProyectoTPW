@@ -64,6 +64,7 @@
 
 .img-servicio:hover{
     transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     
 }
 
@@ -73,6 +74,7 @@
     height: 160px; /* Alto fijo */
     object-fit: cover; /* Evita que la imagen se deforme */
     border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Estilos para el bloque de texto de la derecha */
